@@ -1,0 +1,15 @@
+@use './common/colors.scss' as color;
+@use './common/reset';
+@use './header.scss';
+@use './modal.scss';
+
+
+body {
+  font-family: "Inter", "Oxygen", "Open Sans", sans-serif;
+  color: color.$white;
+  background-color: color.$black;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+

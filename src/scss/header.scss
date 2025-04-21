@@ -1,0 +1,199 @@
+@use "./common/colors.scss" as color;
+.header {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: color.$white-05;
+  @media only screen and (min-width: 769px) and (max-width: 1439px) {
+    height: 76px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    height: 72px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 393px;
+  margin: 0 auto;
+  padding: 0 16px;
+  @media only screen and (min-width: 769px) and (max-width: 1439px) {
+    width: 768px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 1920px;
+    padding: 0 40px;
+  }
+}
+
+.header-wrapper-logo {
+  display: flex;
+  align-items: center;
+  gap: 84px;
+}
+
+.header-logo {
+  width: 150px;
+  height: 18px;
+  @media only screen and (min-width: 769px) and (max-width: 1439px) {
+    width: 152px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 126px;
+  }
+}
+
+.header-list {
+  display: none;
+  @media only screen and (min-width: 1440px) {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.header-wrapper-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: color.$white-50;
+}
+
+.header-language {
+  position: relative;
+  display: none;
+  @media only screen and (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.header-language-btn {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.selected-language {
+  color: color.$white-50;
+  font-size: 16px;
+}
+
+.header-language-list {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.header-language-list li {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer;
+  &:hover {
+    background: color.$white-10;
+  }
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  } 
+}
+
+.svg {
+  width: 24px;
+  height: 24px;
+}
+
+.singIn-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  gap: 4px;
+  border: none;
+  color: color.$white-50;
+  width: 112px;
+  @media only screen and (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.burger {
+  position: relative;
+  width: 20px;
+  height: 14px;
+  margin-left: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+  @media only screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.burger-input[type="checkbox"] {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 1.5px;
+  width: 100%;
+  background-color: color.$white-70;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform: translateY(-100%);
+  transform-origin: left center;
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 0px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  opacity: 0;
+  width: 0%;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 14px;
+  left: 0px;
+}

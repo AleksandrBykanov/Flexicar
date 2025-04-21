@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <title>FLEXICAR</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <nav class="header-wrapper-logo">
+        <a href="./index.html">
+          <svg class="header-logo">
+            <use href="./public/svg/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="header-list">
+          <li class="header-item"><a href="#book">Book</a></li>
+          <li class="header-item"><a href="#help">Help</a></li>
+          <li class="header-item"><a href="#fAQ">FAQ</a></li>
+          <li class="header-item"><a href="#rental">Rental Policies</a></li>
+          <li class="header-item"><a href="#blog">Blog&Guides</a></li>
+        </ul>
+      </nav>
+      <div class="header-wrapper-info">
+        <div class="header-language">
+          <button class="header-language-btn">
+            <span class="selected-language">EN</span>
+            <svg class="svg">
+              <use href="./public/svg/icons.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+          <ul class="header-language-list">
+            <li data-lang="UK">
+              <svg class="svg">
+                <use href="./public/svg/icons.svg#icon-flags-uk"></use>
+              </svg>Ukranian
+            </li>
+            <li data-lang="EN">
+              <svg class="svg">
+                <use href="./public/svg/icons.svg#icon-flag-en"></use>
+              </svg>English
+            </li>
+            <li data-lang="CR">
+              <svg class="svg">
+                <use href="./public/svg/icons.svg#icon-flag-cr"></use>
+              </svg>Croatian
+            </li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <svg class="svg">
+            <use href="./public/svg/icons.svg#icon-phone"></use>
+          </svg>
+          <a href="tel:+380501234567">+123 456 7890</a>
+        </div>
+        <button class="singIn-btn">
+          <svg class="svg">
+            <use href="./public/svg/icons.svg#icon-log-in"></use>
+          </svg>
+          <span class="singIn-span">Sign In </span>
+        </button>
+        <label class="burger" for="burger">
+          <input class="burger-input" type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+  </main>
+
+  <footer></footer>
+
+  <div class="modal">
+    <div class="modal-container">
+      <ul class="modal-list">
+        <li class="modal-item">
+          <a class="modal-link" href="#home">Home</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="#overview">Game Overview</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="#characters">Character Spotlight</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="#map">Interactive Game Map</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="#gallery">Community Fan</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="#leaderboard">Player Rankings</a>
+        </li>
+        <li class="modal-item">
+          <a class="modal-link" href="#soundtrack">Soundtrack Preview</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
