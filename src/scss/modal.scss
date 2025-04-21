@@ -1,3 +1,4 @@
+@use "./common/colors.scss" as color;
   .modal {
     display: none;
     position: fixed;
@@ -5,10 +6,29 @@
     height: 100vh;
     background: #2d2d2f;
     z-index: 5;
-    top: 0;
-    // @include media(desktop) {
-    //   display: none;
-    // }
+    top: 52px;
+    @media only screen and (min-width: 769px) and (max-width: 1439px) {
+      top: 76px;
+      width: 50%;
+      right: 0;
+    }
+  
+    @media only screen and (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .modal-container {
+    width: 391px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 24px 80px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media only screen and (min-width: 769px) and (max-width: 1439px) {
+      position: fixed;
+    }
   }
 
   .modal.active {
@@ -16,13 +36,51 @@
   }
 
   .modal-list {
-    width: 200px;
-    margin: 168px auto 0 auto;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
+    font-weight: 700;
+    font-size: 24px;
   }
 
+  .modal-btn {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    padding: 18px 24px;
+    background: color.$primary;
+    font-size: 16px;
+    color: color.$white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .modal-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media only screen and (min-width: 769px) and (max-width: 1439px) {
+      padding: 0 16px;
+    }
+  }
+
+  .modal-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .modal-language {
+    position: relative;
+  }
 
