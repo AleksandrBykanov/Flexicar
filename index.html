@@ -1,14 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./src/scss/style.scss">
   <title>FLEXICAR</title>
 </head>
 
@@ -68,7 +69,7 @@
           <span class="singIn-span">Sign In </span>
         </button>
         <label class="burger" for="burger">
-          <input class="burger-input" type="checkbox" id="burger">
+          <input class="burger-input" type="checkbox" id="burger" />
           <span></span>
           <span></span>
           <span></span>
@@ -77,31 +78,146 @@
     </div>
   </header>
   <main>
+    <section class="progress">
+      <div class="progress-container">
+        <div class="progress-steps">
+          <span class="circle active"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <div class="bar">
+            <span class="indicator"></span>
+          </div>
+        </div>
+        <div class="progress-p">
+          <p>Add on extras</p>
+          <p>Insurance</p>
+          <p>Confirm Order</p>
+          <p>Payment</p>
+        </div>
+        <div class="progress-wrapper">
+          <picture class="progres-car">
+          <source srcset="
+          /img/order/car.png 1x,
+          /img/order/car@2x.png 2x" />
+          <img src="/img/order/car.png" alt="car" />
+         </picture>
+         <div class="progress-text">
+          <h3>Volkswagen Touareg</h3>
+          <p class="progress-p1">or similar Intermediate</p>
+          <p class="progress-p2">1 rental day</p>
+         </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="order-container">
+        <div class="order-wraper">
+          <picture>
+            <source srcset="
+              /img/order/desk.png 1x,
+              /img/order/desk@2x.png 2x
+              " media="(min-width: 1440px)" />
+            <source srcset="
+              /img/order/tab.png 1x,
+              /img/order/tab@2x.png 2x
+              " media="(min-width: 768px)" />
+            <source srcset="
+              /img/order/mob.png 1x,
+              /img/order/mob@2x.png 2x
+              " media="(min-width: 320px)" />
+            <img src="/img/order/mob.png" alt="car" />
+          </picture>
+          <h3 class="order-title">Volkswagen Touareg</h3>
+          <p class="order-text">32,98 EUR</p>
+          <ul class="order-list">Included in Price
+            <li>
+              <svg width="16" height="16">
+                <use href="./public/svg/icons.svg#icon-check"></use>
+              </svg>
+              <span>Airport/City Fee</span>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./public/svg/icons.svg#icon-check"></use>
+              </svg>
+              <span>Local Tax</span>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./public/svg/icons.svg#icon-check"></use>
+              </svg>
+              <span>Registration Fee</span>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./public/svg/icons.svg#icon-check"></use>
+              </svg>
+              <span>Unlimited Mileage</span>
+            </li>
+          </ul>
+          <ul class="order-list2">
+            <li>
+              <svg width="16" height="16">
+                <use href="./public/svg/icons.svg#icon-car-doors"></use>
+              </svg>
+              <span>5 Doors</span>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./public/svg/icons.svg#icon-luggage"></use>
+              </svg>
+              <span>3 Suitcase</span>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./public/svg/icons.svg#icon-manual"></use>
+              </svg>
+              <span>5 Manual</span>
+            </li>
+            <li>
+              <svg width="16" height="16">
+                <use href="./public/svg/icons.svg#icon-users"></use>
+              </svg>
+              <span>5 Passengers</span>
+            </li>
+          </ul>
+          <button class="order-btn">Proceed to Booking</button>
+        </div>
+      </div>
+    </section>
+    
+
     <section class="contact">
       <div class="contact-container">
         <div class="contact-wrapper">
           <div class="contact-fotos">
             <picture class="contact-foto1">
               <source srcset="
-            /img/contact/foto.png      1x,
-            /img/contact/foto@2x.png   2x " />
+              /img/contact/foto.png 1x,
+              /img/contact/foto@2x.png 2x" />
               <img src="/img/contact/foto.png" alt="foto" />
             </picture>
             <picture class="contact-foto2">
               <source srcset="
-            /img/contact/foto2.png      1x,
-            /img/contact/foto2@2x.png   2x " />
+                    /img/contact/foto2.png    1x,
+                    /img/contact/foto2@2x.png 2x
+                  " />
               <img src="/img/contact/foto2.png" alt="foto" />
             </picture>
             <picture class="contact-foto3">
               <source srcset="
-            /img/contact/foto3.png      1x,
-            /img/contact/foto3@2x.png   2x " />
+                    /img/contact/foto3.png    1x,
+                    /img/contact/foto3@2x.png 2x
+                  " />
               <img src="/img/contact/foto3.png" alt="foto" />
             </picture>
           </div>
           <h3 class="contact-title">Still have questions?</h3>
-          <p class="contact-text">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
+          <p class="contact-text">
+            Can’t find the answer you’re looking for? Please chat to our
+            friendly team.
+          </p>
           <button class="contact-btn">Contact Us</button>
         </div>
       </div>
@@ -122,7 +238,7 @@
         <div class="footer-wrapper">
           <form class="footer-form">
             <label for="email">Stay up to date</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="email" id="email" placeholder="Enter your email" required />
             <button type="submit">Subscribe</button>
           </form>
         </div>
@@ -151,14 +267,15 @@
           <a class="modal-link" href="#fAQ">FAQ</a>
         </li>
         <li class="modal-item">
-          <a class="modal-link" href="#rental Policies">Rental Policies</a>
+          <a class="modal-link" href="#rental">Rental Policies</a>
         </li>
         <li class="modal-item">
-          <a class="modal-link" href="#help Center">Help Center</a>
+          <a class="modal-link" href="#help">Help Center</a>
         </li>
       </ul>
       <div class="modal-bottom">
-        <button class="modal-btn">Sign In
+        <button class="modal-btn">
+          Sign In
           <svg class="modal-svg">
             <use href="./public/svg/icons.svg#icon-modal"></use>
           </svg>

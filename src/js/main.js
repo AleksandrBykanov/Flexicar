@@ -1,6 +1,3 @@
-import '../scss/style.scss';
-import '../scss/style.scss';
-
 const dropdownButton = document.querySelector('.header-language-btn');
 const dropdownContent = document.querySelector('.header-language-list');
 const selectedLanguage = document.querySelector('.selected-language');

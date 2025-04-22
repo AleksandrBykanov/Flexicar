@@ -1,0 +1,107 @@
+@use "./common/colors.scss" as color;
+.progress {
+  background-color: color.$dark-grey;
+  border-top: 1px solid color.$white-20;
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.progress-container {
+  width: 393px;
+  margin: 0 auto;
+  padding: 24px 16px 0 16px;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    width: 768px;
+  }
+}
+
+.progress-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color.$white-20;
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+  border: 1px solid white;
+  transition-delay: 0s;
+  transition: all .2s ease;
+  z-index: 2;
+}
+
+.active {
+  background: color.$primary;
+  box-shadow: 0px 0px 20px rgb(243, 118, 1);
+}
+
+.bar {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: color.$primary-20;
+  z-index: 1;
+}
+
+.indicator {
+  position: absolute;
+  height: 100%;
+  width: 18%;
+  background: color.$primary;
+  transition: all .3s ease;
+}
+
+.progress-p {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  gap: 28px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.4;
+  color: color.$white-50;
+  @media (min-width: 768px) and (max-width: 1439px) {
+    width: 656px;
+    margin: 10px auto 0 auto;
+    gap: 126px;
+  }
+}
+
+.progress-wrapper {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  @media (min-width: 768px) and (max-width: 1439px) {
+    padding: 0 32px;
+    gap: 24px;
+  }
+}
+
+.progress-text h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.progress-p1 {
+  font-size: 14px;
+  line-height: 1.4;
+  color: color.$white-50;
+}
+
+.progress-p2 {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
