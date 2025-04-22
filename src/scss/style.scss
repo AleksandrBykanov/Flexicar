@@ -3,6 +3,8 @@
 @use './header.scss';
 @use './modal.scss';
 @use './contact.scss';
+@use './footer.scss';
+
 
 
 body {
@@ -11,6 +13,7 @@ body {
   background-color: color.$black;
   font-size: 16px;
   font-weight: 400;
+  min-width: 362px;
 
 }
 
