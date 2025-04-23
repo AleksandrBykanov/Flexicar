@@ -1,7 +1,10 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="icon-ellipse" viewBox="0 0 41 32">
-<path d="M35.104 16c0 5.32-6.433 9.632-14.368 9.632s-14.368-4.312-14.368-9.632c0-5.32 6.433-9.632 14.368-9.632s14.368 4.312 14.368 9.632z"></path>
+<symbol id="icon-minus" viewBox="0 0 33 32">
+<path fill="none" stroke="#fefeff" style="stroke: var(--color1, #fefeff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M7.333 16h18.667"></path>
+</symbol>
+<symbol id="icon-plus" viewBox="0 0 33 32">
+<path fill="none" stroke="#fefeff" style="stroke: var(--color1, #fefeff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M16.667 6.667v18.667M7.333 16h18.667"></path>
 </symbol>
 <symbol id="icon-ok" viewBox="0 0 32 32">
 <path fill="none" stroke="#72d38d" style="stroke: var(--color1, #72d38d)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M29.334 14.781v1.227c-0.002 2.875-0.933 5.673-2.654 7.976s-4.141 3.988-6.899 4.803c-2.757 0.815-5.704 0.717-8.401-0.279s-5-2.838-6.565-5.25c-1.565-2.412-2.308-5.265-2.119-8.134s1.301-5.6 3.169-7.786c1.868-2.186 4.393-3.709 7.197-4.343s5.739-0.344 8.365 0.826M29.334 5.333l-13.333 13.347-4-4"></path>
